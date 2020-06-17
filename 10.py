@@ -1,0 +1,22 @@
+import tensorflow as tf
+
+a = tf.constant([1, 2., 3, 4, 5, 6, 7., 8.1])
+b = tf.constant([[1.0, 2, 3], [4, 5, 6]])
+print(a)
+print(a.dtype)
+print(tf.math.reduce_mean(a))
+print(tf.math.reduce_mean(b))
+c = tf.constant([[1, 2, 1], [5, 2, 10]])
+print(c.dtype)
+print(tf.math.reduce_mean(c))
+
+d = tf.random.normal(shape=[3, 4], mean=7.0)
+print(d)
+print("---------------------------")
+print(d.numpy())
+print(tf.math.reduce_mean(d))
+print("---------------------------")
+e = tf.random.normal(shape=[2, 2], mean=2.0, stddev=1.1)
+print(e)
+f = tf.random.uniform(shape=[3, 4], minval=2.2, maxval=12.2, seed=8, dtype=tf.float32)
+print(f)
