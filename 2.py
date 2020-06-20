@@ -3,6 +3,7 @@ import numpy as np
 
 # img = np.zeros((512, 512, 3), np.uint8)
 img = cv.imread("img\FIT.jpg")
+print(img.data,"------>")
 font = cv.FONT_HERSHEY_COMPLEX_SMALL
 cv.line(img, (20, 20), (250, 250), (255, 0, 0), 5)
 cv.rectangle(img, (100, 100), (350, 350), (0, 255, 0), 3)
